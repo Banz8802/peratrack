@@ -1,26 +1,101 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg-dark: #00160D;
+    --bg-card: #032416;
+    --bg-card-hover: #063421;
+    --primary-green: #03A251;
+    --highlight-green: #85DB6C;
+    --secondary-green: #027745;
+    --border-dark: rgba(133, 219, 108, 0.15);
+  }
+  body {
+    background-color: var(--bg-dark);
+    color: #e2e8f0;
+    overflow-x: hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom PeraTrack Glassmorphism & Card Styles */
+.tekmino-card {
+  background: rgba(3, 36, 22, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(133, 219, 108, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tekmino-card:hover {
+  border-color: rgba(133, 219, 108, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(3, 162, 81, 0.25);
+  transform: translateY(-4px);
+}
+
+.tekmino-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #03A251 0%, #85DB6C 100%);
+  color: #00160D;
+  font-weight: 700;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(3, 162, 81, 0.3);
+}
+
+.tekmino-btn-primary:hover {
+  box-shadow: 0 6px 25px rgba(133, 219, 108, 0.5);
+  transform: translateY(-2px);
+}
+
+.tekmino-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: transparent;
+  border: 1px solid rgba(133, 219, 108, 0.3);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.tekmino-btn-outline:hover {
+  border-color: #85DB6C;
+  color: #85DB6C;
+  background: rgba(133, 219, 108, 0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #00160D;
+}
+::-webkit-scrollbar-thumb {
+  background: #027745;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #85DB6C;
+}
+
+
