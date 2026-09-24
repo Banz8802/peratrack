@@ -63,7 +63,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </div>
             <div className="border-b border-white/5 pb-3">
               <Link
-                href="#features"
+                href="/#features"
                 onClick={onClose}
                 className="flex items-center justify-between text-slate-200 hover:text-[#85DB6C] font-medium py-1"
               >
@@ -73,7 +73,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </div>
             <div className="border-b border-white/5 pb-3">
               <Link
-                href="#how-it-works"
+                href="/#how-it-works"
                 onClick={onClose}
                 className="flex items-center justify-between text-slate-200 hover:text-[#85DB6C] font-medium py-1"
               >
@@ -83,7 +83,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </div>
             <div className="border-b border-white/5 pb-3">
               <Link
-                href="#faq"
+                href="/#faq"
                 onClick={onClose}
                 className="flex items-center justify-between text-slate-200 hover:text-[#85DB6C] font-medium py-1"
               >
@@ -93,7 +93,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </div>
             <div className="pb-3">
               <Link
-                href="#register"
+                href="/#register"
                 onClick={onClose}
                 className="flex items-center justify-between text-slate-200 hover:text-[#85DB6C] font-medium py-1"
               >

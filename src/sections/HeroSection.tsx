@@ -8,7 +8,7 @@ import { FacebookIcon, InstagramIcon, LinkedinIcon, XIcon } from "@/components/S
 
 const slides = [
   {
-    bg: "/images/slider/h3-slider-img-1.webp",
+    bg: "/images/slider/slider-img-1.webp",
     badgeIcon: ShieldCheck,
     subtitle: "Invite-only production · Philippines",
     title: "Take control of your money, cards, and installments.",
@@ -19,7 +19,7 @@ const slides = [
     secondaryBtnLink: "#features",
   },
   {
-    bg: "/images/slider/h3-slider-img-2.webp",
+    bg: "/images/slider/slider-img-2.webp",
     badgeIcon: CreditCard,
     subtitle: "Built for PH Credit Cards",
     title: "Track statement dates, due dates & installments without guesswork.",
@@ -30,7 +30,7 @@ const slides = [
     secondaryBtnLink: "#how-it-works",
   },
   {
-    bg: "/images/slider/h3-slider-img-3.webp",
+    bg: "/images/slider/slider-img-3.webp",
     badgeIcon: Sparkles,
     subtitle: "Privacy-First Architecture",
     title: "Zero card numbers stored or requested ever.",
@@ -64,9 +64,8 @@ export default function HeroSection() {
       {slides.map((slide, idx) => (
         <div
           key={idx}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            idx === currentSlide ? "opacity-100 scale-105" : "opacity-0 scale-100 pointer-events-none"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${idx === currentSlide ? "opacity-100 scale-105" : "opacity-0 scale-100 pointer-events-none"
+            }`}
           style={{ transitionProperty: "opacity, transform", transitionDuration: "1000ms" }}
         >
           <Image
@@ -109,10 +108,10 @@ export default function HeroSection() {
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
             {slides[currentSlide].title.split(" ").map((word, i) =>
               word.toLowerCase().includes("money") ||
-              word.toLowerCase().includes("cards") ||
-              word.toLowerCase().includes("installments") ||
-              word.toLowerCase().includes("zero") ||
-              word.toLowerCase().includes("guesswork") ? (
+                word.toLowerCase().includes("cards") ||
+                word.toLowerCase().includes("installments") ||
+                word.toLowerCase().includes("zero") ||
+                word.toLowerCase().includes("guesswork") ? (
                 <span key={i} className="text-transparent bg-clip-text bg-gradient-to-r from-[#85DB6C] to-[#03A251]">
                   {word}{" "}
                 </span>
@@ -162,9 +161,8 @@ export default function HeroSection() {
             <button
               key={i}
               onClick={() => setCurrentSlide(i)}
-              className={`h-2.5 rounded-full transition-all ${
-                i === currentSlide ? "w-8 bg-[#85DB6C]" : "w-2.5 bg-white/30"
-              }`}
+              className={`h-2.5 rounded-full transition-all ${i === currentSlide ? "w-8 bg-[#85DB6C]" : "w-2.5 bg-white/30"
+                }`}
             />
           ))}
         </div>
