@@ -27,10 +27,10 @@ const sections = [
     id: "early-access-service",
     title: "Early-access service",
     icon: Zap,
-    badge: "Free & Invite-Only",
+    badge: "Free Access",
     badgeColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
     content:
-      "PeraTrack is invite-only and provided free of charge. Features may change, break, or be removed, and the service is provided “as is” without warranties.",
+      "PeraTrack is provided free of charge to all registered users. Features may change, break, or be removed, and the service is provided “as is” without warranties.",
   },
   {
     id: "software-bugs",
@@ -129,7 +129,7 @@ export default function TermsContent() {
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-[#85DB6C]/15">
                 <div className="flex items-center gap-2.5 text-xs font-medium text-slate-300">
                   <CheckCircle2 className="w-4 h-4 text-[#85DB6C] shrink-0" />
-                  <span>Provided Free & Invite-Only</span>
+                  <span>Provided 100% Free</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-xs font-medium text-slate-300">
                   <CheckCircle2 className="w-4 h-4 text-[#85DB6C] shrink-0" />
@@ -198,8 +198,8 @@ export default function TermsContent() {
                     <span>Important Notice</span>
                   </div>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    PeraTrack is currently{" "}
-                    <span className="font-bold text-[#85DB6C]">invite-only production</span>. Always verify figures against your official bank statements.
+                    PeraTrack is currently in{" "}
+                    <span className="font-bold text-[#85DB6C]">active production</span>. Always verify figures against your official bank statements.
                   </p>
                 </div>
               </div>

@@ -12,25 +12,25 @@ export default function CTASection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00160D] border border-[#85DB6C]/30 text-[#85DB6C] text-xs font-semibold">
           <ShieldCheck className="w-4 h-4" />
-          <span>Invite-Only Access</span>
+          <span>Instant Account Creation</span>
         </div>
 
         <h2 className="text-3xl sm:text-5xl font-extrabold text-white">
-          Ready to start?
+          Start Tracking Your Finances
         </h2>
 
-        <p className="text-lg text-slate-300 max-w-xl mx-auto">
-          Request an invite and take control of your money, cards, and installments today.
+        <p className="text-lg text-slate-300 max-w-xl mx-auto leading-relaxed">
+          Create your free PeraTrack account today and take control of your money, credit cards, installments, and receipt scanning.
         </p>
 
         <div className="pt-4 flex justify-center">
-          <Link
-            href="mailto:support@peratrack.ph?subject=Request%20early%20access"
+          <a
+            href="mailto:support@peratrack.ph?subject=Create%20PeraTrack%20Account"
             className="inline-flex items-center gap-2.5 bg-gradient-to-r from-[#03A251] to-[#85DB6C] text-[#00160D] font-extrabold px-8 py-4 rounded-full text-base hover:brightness-110 transition-all shadow-xl shadow-[#03A251]/30 hover:scale-105"
           >
-            <span>Request early access</span>
+            <span>Create Your Free Account</span>
             <ArrowRight className="w-5 h-5" />
-          </Link>
+          </a>
         </div>
       </div>
     </section>

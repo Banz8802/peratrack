@@ -6,8 +6,16 @@ import { Sparkles, ArrowRight, FileSpreadsheet, CreditCard, PieChart, ShieldAler
 
 const workflows = [
   {
-    id: "tab-1",
+    id: "tab-ocr",
     num: "01",
+    label: "OCR Receipt Reader",
+    title: "Scan Receipts & Auto-Extract Expense Details",
+    excerpt: "Use your device camera to scan paper or digital receipts. PeraTrack automatically reads merchant name, date, total amount, VAT, and line items.",
+    banks: ["Camera Scan (On-Device)", "Digital Image Upload", "Merchant & Date Auto-Detect", "Local Staging Review"],
+  },
+  {
+    id: "tab-1",
+    num: "02",
     label: "PDF Statement Parser",
     title: "Import e-Statements for UnionBank & Security Bank",
     excerpt: "Upload your official PDF statements. PeraTrack parses purchases, finance fees, and refunds for review before updating your balance.",
@@ -15,7 +23,7 @@ const workflows = [
   },
   {
     id: "tab-2",
-    num: "02",
+    num: "03",
     label: "Credit Card Hub",
     title: "Statement Due Dates & Minimum Payments Tracked",
     excerpt: "Never miss a due date again. Monitor outstanding balances, statement cut-offs, minimum due allocations, and cashback refunds.",
@@ -23,24 +31,16 @@ const workflows = [
   },
   {
     id: "tab-3",
-    num: "03",
+    num: "04",
     label: "Installments & BNPL",
     title: "0% Installments & Processing Fee Breakdown",
     excerpt: "Track month-by-month installment schedules, remaining term obligations, processing charges, and merchant promos with complete clarity.",
     banks: ["0% Merchant Installments", "Cash-on-Installment", "Balance Conversion", "Buy Now Pay Later"],
   },
-  {
-    id: "tab-4",
-    num: "04",
-    label: "Privacy Safeguards",
-    title: "Zero Card Number Storage Architecture",
-    excerpt: "PeraTrack never asks for or stores your 16-digit card number or CVV. Use custom card nicknames for total peace of mind.",
-    banks: ["No CVV required", "No 16-digit number needed", "Optional 4-digit network detector", "Local staging review"],
-  },
 ];
 
 export default function ServicesSection() {
-  const [activeTab, setActiveTab] = useState("tab-1");
+  const [activeTab, setActiveTab] = useState("tab-ocr");
 
   const activeFlow = workflows.find((w) => w.id === activeTab) || workflows[0];
 
@@ -62,7 +62,7 @@ export default function ServicesSection() {
             href="#register"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#03A251] to-[#85DB6C] text-[#00160D] font-extrabold px-6 py-3 rounded-full text-sm hover:brightness-110 transition-all shadow-lg shadow-[#03A251]/20 shrink-0 self-start md:self-auto"
           >
-            <span>Request early access</span>
+            <span>Create Free Account</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -130,7 +130,7 @@ export default function ServicesSection() {
                 href="#register"
                 className="inline-flex items-center gap-2 text-[#85DB6C] font-extrabold hover:text-white group text-sm"
               >
-                <span>Get early invite</span>
+                <span>Start Tracking</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>

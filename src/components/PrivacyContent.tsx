@@ -127,7 +127,7 @@ export default function PrivacyContent() {
             <div className="relative z-10 max-w-3xl">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#85DB6C]/10 border border-[#85DB6C]/25 text-[#85DB6C] text-xs font-semibold tracking-wide uppercase mb-6">
                 <Shield className="w-3.5 h-3.5" />
-                <span>Invite-Only Production Policy</span>
+                <span>Privacy Policy & Transparency</span>
               </div>
               
               <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
@@ -135,7 +135,7 @@ export default function PrivacyContent() {
               </h1>
 
               <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
-                PeraTrack is invite-only production. This plain-language policy explains what we store and how we handle it. It is not a substitute for legal advice, and we may refine it as the product evolves.
+                PeraTrack is in active production. This plain-language policy explains what we store and how we handle it. It is not a substitute for legal advice, and we may refine it as the product evolves.
               </p>
 
               {/* Security Highlights Banner */}
@@ -211,8 +211,8 @@ export default function PrivacyContent() {
                     <span>Important Notice</span>
                   </div>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    PeraTrack is currently{" "}
-                    <span className="font-bold text-[#85DB6C]">invite-only production</span>. Always verify figures against your official bank statements.
+                    PeraTrack is currently in{" "}
+                    <span className="font-bold text-[#85DB6C]">active production</span>. Always verify figures against your official bank statements.
                   </p>
                 </div>
               </div>

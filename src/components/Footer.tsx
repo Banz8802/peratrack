@@ -15,37 +15,14 @@ export default function Footer() {
           <div className="max-w-sm space-y-4">
             <PeraTrackLogo />
             <p className="text-xs text-slate-400 leading-relaxed">
-              Invite-only production · Personal finance for credit cards, installments, and accounts in the Philippines.
+              Personal finance tracking, credit cards, installments, and instant OCR receipt scanning for the Philippines.
             </p>
-            {/* App Store & Google Play Download Badges (Hidden until app store approval) */}
-            {/* 
-            <div className="flex items-center gap-3 pt-1">
-              <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform">
-                <Image
-                  src="/images/footer/google-play.webp"
-                  alt="Get it on Google Play"
-                  width={125}
-                  height={38}
-                  className="h-9 w-auto"
-                />
-              </a>
-              <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform">
-                <Image
-                  src="/images/footer/app-store.webp"
-                  alt="Download on the App Store"
-                  width={125}
-                  height={38}
-                  className="h-9 w-auto"
-                />
-              </a>
-            </div>
-            */}
           </div>
-
 
           {/* Navigation Links */}
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-slate-300 font-medium">
             <Link href="/" className="hover:text-[#85DB6C] transition-colors">Home</Link>
+            <Link href="/#receipt-scanner" className="hover:text-[#85DB6C] transition-colors">Receipt Scanner</Link>
             <Link href="/#features" className="hover:text-[#85DB6C] transition-colors">Features</Link>
             <Link href="/#how-it-works" className="hover:text-[#85DB6C] transition-colors">How It Works</Link>
             <Link href="/#faq" className="hover:text-[#85DB6C] transition-colors">FAQ</Link>

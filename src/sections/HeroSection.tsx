@@ -3,20 +3,31 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ChevronLeft, ChevronRight, ShieldCheck, Sparkles, CreditCard, Lock } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, ShieldCheck, Sparkles, CreditCard, Lock, ScanLine } from "lucide-react";
 import { FacebookIcon, InstagramIcon, LinkedinIcon, XIcon } from "@/components/SocialIcons";
 
 const slides = [
   {
     bg: "/images/slider/slider-img-1.webp",
     badgeIcon: ShieldCheck,
-    subtitle: "Invite-only production · Philippines",
+    subtitle: "Smart Personal Finance · Philippines",
     title: "Take control of your money, cards, and installments.",
     desc: "PeraTrack helps Filipinos track accounts, credit cards, statement due dates, installment purchases, refunds, fees, and payments in one clear dashboard.",
-    btnText: "Request early access",
+    btnText: "Start tracking free",
     btnLink: "#register",
-    secondaryBtnText: "See how it works",
-    secondaryBtnLink: "#features",
+    secondaryBtnText: "Try Receipt Scanner",
+    secondaryBtnLink: "#receipt-scanner",
+  },
+  {
+    bg: "/images/slider/slider-img-3.webp",
+    badgeIcon: ScanLine,
+    subtitle: "OCR Receipt Scanner",
+    title: "Scan Receipts. Track Expenses Faster.",
+    desc: "Use PeraTrack's OCR Receipt Reader to scan receipts with your phone camera and automatically extract expense details in seconds.",
+    btnText: "Try Receipt Scanner",
+    btnLink: "#receipt-scanner",
+    secondaryBtnText: "Create Account",
+    secondaryBtnLink: "#register",
   },
   {
     bg: "/images/slider/slider-img-2.webp",
@@ -34,8 +45,8 @@ const slides = [
     badgeIcon: Sparkles,
     subtitle: "Privacy-First Architecture",
     title: "Zero card numbers stored or requested ever.",
-    desc: "Never enter your 16-digit card number or CVV. Stage PDF e-statements for local review first, keeping you in complete control before updating balances.",
-    btnText: "Request early access",
+    desc: "Never enter your 16-digit card number or CVV. Stage PDF e-statements and receipts for local review first, keeping you in complete control before updating balances.",
+    btnText: "Create Free Account",
     btnLink: "#register",
     secondaryBtnText: "Read FAQ",
     secondaryBtnLink: "#faq",
@@ -83,11 +94,11 @@ export default function HeroSection() {
 
       {/* Social Sidebar (Desktop Left) */}
       <div className="hidden xl:flex fixed left-8 top-1/2 -translate-y-1/2 z-20 flex-col items-center gap-6">
-        <span className="text-xs uppercase tracking-widest text-[#85DB6C] rotate-90 origin-left whitespace-nowrap mb-6 font-semibold">
+        <span className="text-xs uppercase tracking-widest text-[#85DB6C] [writing-mode:vertical-lr] whitespace-nowrap font-semibold">
           Follow us:
         </span>
         <div className="w-px h-12 bg-[#85DB6C]/20" />
-        <div className="flex flex-col gap-4 text-slate-300">
+        <div className="flex flex-col items-center gap-4 text-slate-300">
           <a href="#" className="hover:text-[#85DB6C] transition-colors" aria-label="Facebook"><FacebookIcon className="w-4 h-4" /></a>
           <a href="#" className="hover:text-[#85DB6C] transition-colors" aria-label="Instagram"><InstagramIcon className="w-4 h-4" /></a>
           <a href="#" className="hover:text-[#85DB6C] transition-colors" aria-label="LinkedIn"><LinkedinIcon className="w-4 h-4" /></a>
@@ -111,6 +122,8 @@ export default function HeroSection() {
                 word.toLowerCase().includes("cards") ||
                 word.toLowerCase().includes("installments") ||
                 word.toLowerCase().includes("zero") ||
+                word.toLowerCase().includes("receipts") ||
+                word.toLowerCase().includes("faster") ||
                 word.toLowerCase().includes("guesswork") ? (
                 <span key={i} className="text-transparent bg-clip-text bg-gradient-to-r from-[#85DB6C] to-[#03A251]">
                   {word}{" "}

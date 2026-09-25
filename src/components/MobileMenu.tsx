@@ -63,6 +63,16 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </div>
             <div className="border-b border-white/5 pb-3">
               <Link
+                href="/#receipt-scanner"
+                onClick={onClose}
+                className="flex items-center justify-between text-slate-200 hover:text-[#85DB6C] font-medium py-1"
+              >
+                <span>Receipt Scanner</span>
+                <ChevronRight className="w-4 h-4" />
+              </Link>
+            </div>
+            <div className="border-b border-white/5 pb-3">
+              <Link
                 href="/#features"
                 onClick={onClose}
                 className="flex items-center justify-between text-slate-200 hover:text-[#85DB6C] font-medium py-1"
@@ -97,7 +107,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 onClick={onClose}
                 className="flex items-center justify-between text-slate-200 hover:text-[#85DB6C] font-medium py-1"
               >
-                <span>Request Early Access</span>
+                <span>Create Account</span>
                 <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
@@ -108,10 +118,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <div className="mt-8 pt-6 border-t border-white/10 space-y-4">
           <div className="flex items-center gap-2 text-xs font-semibold text-[#85DB6C]">
             <Shield className="w-4 h-4" />
-            <span>Invite-only production · Philippines</span>
+            <span>Smart Personal Finance · Philippines</span>
           </div>
           <p className="text-xs text-slate-400 leading-relaxed">
-            PeraTrack helps Filipinos track accounts, credit cards, statement due dates, installment purchases, refunds, and payments.
+            PeraTrack helps Filipinos track accounts, credit cards, OCR receipts, statement due dates, installment purchases, and payments.
           </p>
         </div>
       </div>

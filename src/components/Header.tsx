@@ -41,6 +41,9 @@ export default function Header({ onOpenMobileMenu, onOpenSearch }: HeaderProps) 
             <Link href="/" className="text-sm font-semibold text-[#85DB6C] hover:text-white transition-colors">
               Home
             </Link>
+            <Link href="/#receipt-scanner" className="text-sm font-medium text-slate-200 hover:text-[#85DB6C] transition-colors">
+              Receipt Scanner
+            </Link>
             <Link href="/#features" className="text-sm font-medium text-slate-200 hover:text-[#85DB6C] transition-colors">
               Features
             </Link>
@@ -49,9 +52,6 @@ export default function Header({ onOpenMobileMenu, onOpenSearch }: HeaderProps) 
             </Link>
             <Link href="/#faq" className="text-sm font-medium text-slate-200 hover:text-[#85DB6C] transition-colors">
               FAQ
-            </Link>
-            <Link href="/#contact" className="text-sm font-medium text-slate-200 hover:text-[#85DB6C] transition-colors">
-              Contact
             </Link>
           </nav>
 
@@ -69,7 +69,7 @@ export default function Header({ onOpenMobileMenu, onOpenSearch }: HeaderProps) 
               href="/#register"
               className="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-[#03A251] to-[#85DB6C] text-[#00160D] font-bold px-5 py-2.5 rounded-full text-sm hover:brightness-110 transition-all shadow-lg shadow-[#03A251]/25"
             >
-              <span>Request early access</span>
+              <span>Get Started</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
 

@@ -13,8 +13,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "PeraTrack — Take control of your money, cards, and installments",
-  description: "PeraTrack helps Filipinos track accounts, credit cards, statement due dates, installment purchases, refunds, fees, and payments in one clear dashboard.",
+  title: "PeraTrack — Personal Finance, Credit Cards & OCR Receipt Scanner",
+  description: "PeraTrack helps Filipinos track accounts, credit cards, OCR receipts, statement due dates, installment purchases, fees, and payments in one clear dashboard.",
 };
 
 export default function RootLayout({

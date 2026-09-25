@@ -7,6 +7,7 @@ import SearchModal from "@/components/SearchModal";
 import Footer from "@/components/Footer";
 
 import HeroSection from "@/sections/HeroSection";
+import OCRReceiptSection from "@/sections/OCRReceiptSection";
 import FeaturesSection from "@/sections/FeaturesSection";
 import ServicesSection from "@/sections/ServicesSection";
 import MarqueeSection from "@/sections/MarqueeSection";
@@ -40,6 +41,7 @@ export default function Home() {
       {/* PeraTrack Core Page Body */}
       <div className="flex-1">
         <HeroSection />
+        <OCRReceiptSection />
         <FeaturesSection />
         <ServicesSection />
         <MarqueeSection />

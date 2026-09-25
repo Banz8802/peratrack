@@ -216,8 +216,8 @@ export default function AccountDeletionContent() {
                     <span>Important Notice</span>
                   </div>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    PeraTrack is currently{" "}
-                    <span className="font-bold text-[#85DB6C]">invite-only production</span>. Always verify figures against your official bank statements.
+                    PeraTrack is currently in{" "}
+                    <span className="font-bold text-[#85DB6C]">active production</span>. Always verify figures against your official bank statements.
                   </p>
                 </div>
               </div>

@@ -5,20 +5,24 @@ import { Sparkles, ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    q: "Is PeraTrack free?",
-    a: "Yes, PeraTrack is free to use. Access is invite-only right now.",
+    q: "Is PeraTrack free to use?",
+    a: "Yes! PeraTrack is 100% free to use. You can create your free account immediately without an invitation code or waitlist.",
+  },
+  {
+    q: "How does the OCR Receipt Reader work?",
+    a: "Simply scan a receipt with your phone camera or upload an image. PeraTrack's on-device OCR engine automatically extracts merchant name, date, total amount, VAT, and line items so you can review and save expenses in seconds.",
   },
   {
     q: "Do I need to enter my full card number?",
-    a: "No. PeraTrack never asks for or stores your full card number, and does not need the last 4 digits either. Use a card name or nickname to identify your card.",
+    a: "No. PeraTrack never asks for or stores your 16-digit card number or CVV. Use custom card nicknames to identify your accounts for total peace of mind.",
   },
   {
-    q: "Can I import statements?",
-    a: "UnionBank and Security Bank PDFs are currently supported. BPI and RCBC can use screenshot/manual entry while parser support improves.",
+    q: "Can I import PDF bank statements?",
+    a: "Yes, official e-statements from UnionBank and Security Bank are currently supported for PDF parsing. BPI and RCBC can use screenshot/manual entry or OCR receipt scanning.",
   },
   {
     q: "Is this a replacement for my bank statement?",
-    a: "No. PeraTrack helps you track and estimate, but your bank statement remains the official record.",
+    a: "No. PeraTrack helps you track, organize, and estimate your finances, but your official bank statement remains the authoritative record.",
   },
 ];
 

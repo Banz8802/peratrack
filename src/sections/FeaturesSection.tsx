@@ -1,9 +1,14 @@
 "use client";
 
 import React from "react";
-import { Eye, CreditCard, CalendarCheck, ShieldCheck, UserCheck, Sparkles, SlidersHorizontal } from "lucide-react";
+import { Eye, CreditCard, CalendarCheck, ShieldCheck, UserCheck, Sparkles, SlidersHorizontal, ScanLine } from "lucide-react";
 
 const features = [
+  {
+    icon: ScanLine,
+    title: "Scan receipts. Track expenses faster.",
+    desc: "Use PeraTrack's OCR Receipt Reader to scan receipts with your phone camera and automatically extract merchant, date, amount, and line items.",
+  },
   {
     icon: Eye,
     title: "See your money clearly",
@@ -22,17 +27,12 @@ const features = [
   {
     icon: SlidersHorizontal,
     title: "Review before anything changes",
-    desc: "Statement imports are staged for review first. You stay in control before applying purchases, payments, refunds, fees, or installments.",
+    desc: "Receipt scans and statement imports are staged for review first. You stay in control before applying expenses, payments, or refunds.",
   },
   {
     icon: ShieldCheck,
-    title: "Privacy-first card handling",
-    desc: "Never enter your full card number. Identify cards by name or nickname. The first 4 digits are optional and only help detect the network — they’re never stored.",
-  },
-  {
-    icon: UserCheck,
-    title: "Shaped by real users",
-    desc: "Help improve PeraTrack by reporting issues and requesting features crafted for real Filipino finance workflows.",
+    title: "Privacy-first card & receipt handling",
+    desc: "Never enter your full card number or upload raw receipt photos to external servers. OCR processing happens locally on your device.",
   },
 ];
 
